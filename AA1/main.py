@@ -108,6 +108,7 @@ class EmailSenderApp(Tk):
         count = 0
         while True:
             if(count < 3):
+                count+=1
                 self.send_single_email()
                 time.sleep(send_after_seconds)
             else:
